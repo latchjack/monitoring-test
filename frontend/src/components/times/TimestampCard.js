@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const FilmCard = ({ name, assetImage }) => (
+const TimestampCard = ({ timestamp, value }) => (
 
   <div className="column is-half-desktop is-one-third-tablet is-full-mobile">
-    <Link to={`/films/${name}`}>
+    <Link to={`/times/${time}`}>
       <div className="card">
         
-        <h1 className="filmtitle">{name}</h1>
-        <img src={assetImage} alt={name} />
+        <h2>{timestamp}</h2>
+        <h2>{value}</h2>
 
       </div>
     </Link>
@@ -16,4 +16,4 @@ const FilmCard = ({ name, assetImage }) => (
 
 )
 
-export default FilmCard
+export default TimestampCard

@@ -18,6 +18,7 @@ class Navbar extends React.Component {
           </div>
             <div className="navbar-end">
               <Link className="navbar-item has-text-white title is-4" to="/films">Films</Link>
+              <Link className="navbar-item has-text-white title is-4" to="/times">Times</Link>
             </div>
           </div>
       </nav>

@@ -20,7 +20,7 @@ class FilmIndex extends React.Component {
 
   async getOneFilm() {
     const res = await axios.get('https://my-json-server.typicode.com/sky-uk/monitoring-tech-test/assets')
-    const film = res.data.find(film => film.name)
+    const film = res.data.find(film => film.name === '')
     this.setState({ film })
   }
 
