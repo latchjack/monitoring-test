@@ -25,7 +25,7 @@ The main challenges I had on this project were...
 ### Improvements
 The improvements I would like to make on this game would be the following...
 1. Getting the individual pages working.
-2. Converting the unix timestamps into a date format using `Moment.js`.
+2. Converting the unix timestamps into a date format using [Moment.js](https://momentjs.com/).
 3. Rank the titles using the amount of total viewings they've had.
 
 Overall I found this really fun but found I needed a some more time to add more functionality. I would definitely like to have another attempt of this without the 4 hour limit.
