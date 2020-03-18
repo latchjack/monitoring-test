@@ -1,0 +1,29 @@
+.card {
+  background-image: url('../assets/year-card.jpg');
+  background-size: contain;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-body {
+  background-image: url('../assets/sk.svg.png');
+}
+
+.skylogo {
+  background-image: url('//www.sky.com/assets/masthead/images/sky-logo.png');
+}
+
+.card {
+  background-color: grey;
+  background-size: contain;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.filmtitle {
+  text-align: center;
+  font-size: large;
+  font-weight: 700;
+}
