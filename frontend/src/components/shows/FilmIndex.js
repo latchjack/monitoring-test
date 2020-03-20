@@ -12,16 +12,9 @@ class FilmIndex extends React.Component {
     try {
       const res = await axios.get('https://my-json-server.typicode.com/sky-uk/monitoring-tech-test/assets')
       this.setState({ films: res.data })
-        this.getOneFilm()
     } catch (err) {
       console.log(err)
     }
-  }
-
-  async getOneFilm() {
-    const res = await axios.get('https://my-json-server.typicode.com/sky-uk/monitoring-tech-test/assets')
-    const film = res.data.find(film => film.name === '')
-    this.setState({ film })
   }
 
   render() {
@@ -30,7 +23,7 @@ class FilmIndex extends React.Component {
       <section className="section">
         <div className="container">
           <div className="columns is-mobile is-multiline">
-            {this.state.films.map(film => <FilmCard key={film.name} {...film} />)}
+            {this.state.films.map(film => <FilmCard key={film.name} {...film} onClick={this.handleClick} />)}
           </div>
         </div>
       </section>
