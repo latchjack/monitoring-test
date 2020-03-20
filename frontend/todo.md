@@ -1,7 +1,7 @@
 # TODO LIST
 
-1. get individual pages working
-3. combine total views to one number
+1. ~~get individual pages working~~
+3. ~~combine total views to one number~~
 2. get timestamps to show up
 3. convert timestamps 
 4. styling

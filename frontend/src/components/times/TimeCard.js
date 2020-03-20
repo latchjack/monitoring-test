@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const TimestampCard = ({ timestamp, value }) => (
+const TimeCard = ({ timestamp, value }) => (
 
   <div className="column is-half-desktop is-one-third-tablet is-full-mobile">
-    <Link to={`/times/${time}`}>
+    <Link to={`/times/${timestamp}`}>
       <div className="card">
         
         <h2>{timestamp}</h2>
@@ -16,4 +16,4 @@ const TimestampCard = ({ timestamp, value }) => (
 
 )
 
-export default TimestampCard
+export default TimeCard

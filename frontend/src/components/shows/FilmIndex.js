@@ -23,7 +23,7 @@ class FilmIndex extends React.Component {
       <section className="section">
         <div className="container">
           <div className="columns is-mobile is-multiline">
-            {this.state.films.map(film => <FilmCard key={film.name} {...film} onClick={this.handleClick} />)}
+            {this.state.films.map(film => <FilmCard key={film.name} {...film} />)}
           </div>
         </div>
       </section>
