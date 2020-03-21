@@ -8,6 +8,7 @@
 
 .hero-body {
   background-image: url('../assets/sk.svg.png');
+  background-color: #0072c9;
 }
 
 .skylogo {
@@ -20,10 +21,23 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  border-radius: 5;
 }
 
 .filmtitle {
   text-align: center;
-  font-size: large;
+  font-size: 2em;
   font-weight: 700;
+}
+
+#root > section > div > div > div > a > div > h1 {
+  font-size: 40px;
+}
+
+#root > nav > div > div.navbar-end > a:nth-child(1) {
+  margin: 0;
+}
+
+#root > section > div > div > div > a > div {
+  border: 2px solid red;
 }

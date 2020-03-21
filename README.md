@@ -7,6 +7,7 @@
 + React
   + React-Router-Dom
 + Axios
++ Recharts
 + Git & GitHub
 
 ## Release History
@@ -20,7 +21,35 @@ If you would like to start this project please fork and in the Terminal, CD into
 
 ### Challenges
 The main challenges I had on this project were...
-1. Getting the individual films to display. I managed to get the index page up and running fairly quickly, but found it quite tricky to route to another *page* which would display just a single film.
+1. ~~Getting the individual films to display. I managed to get the index page up and running fairly quickly, but found it quite tricky to route to another *page* which would display just a single film.~~
+  * Solution - goes here.. include screenshot I took
+  ![Error I recieved]( "example code")
+2. Getting the charts to show the data using Recharts.
+  * I found it tricky as ...
+  ```js
+    render() {
+    return (
+      <section className="section">
+        <div className="container">
+          {this.state.dataList.map(individualData =>
+            <div key={individualData.timestamp} {...individualData} className="columns is-mobile is-multiline">
+              <LineChart width={600} height={300} data={this.state.dataList}>
+                <Line type="monotone" dataKey="individualData.timestamp" stroke="#8884d8" />
+                <Line type="monotone" dataKey="individualData.value" stroke="#82ca9d" />
+                <CartesianGrid stroke="#ccc" />
+                <XAxis dataKey="value" />
+                <YAxis dataKey="timestamp" />
+              </LineChart>
+            </div>
+          )}
+        </div>
+      </section>
+    )
+  }
+  ```
+3. 
+
+}
 
 ### Improvements
 The improvements I would like to make on this game would be the following...
