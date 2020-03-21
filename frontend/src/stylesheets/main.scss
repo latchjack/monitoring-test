@@ -1,3 +1,10 @@
+$skyDarkBlue: #274b99;
+$skyLightBlue: #72acd8;
+$skyOrangeLeft: #fcc46b;
+$skyRedMiddle: #ff2205;
+$skyPurpleRight: #970c89;
+
+
 .card {
   background-image: url('../assets/year-card.jpg');
   background-size: contain;
@@ -6,13 +13,27 @@
   flex-direction: column;
 }
 
-.hero-body {
-  background-image: url('../assets/sk.svg.png');
+body {
   background-color: #0072c9;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
-.skylogo {
-  background-image: url('//www.sky.com/assets/masthead/images/sky-logo.png');
+.hero {
+  width: 100vw;
+  background-image: url('../assets/skylogo.png');
+  background-size: 820px;
+}
+
+.navbar {
+  background-color: $skyDarkBlue;
+}
+
+.hero-body {
+  // background-image: url('../assets/sk.svg.png');
+  background-color: black;
 }
 
 .card {
@@ -24,20 +45,6 @@
   border-radius: 5;
 }
 
-.filmtitle {
-  text-align: center;
-  font-size: 2em;
-  font-weight: 700;
-}
-
 #root > section > div > div > div > a > div > h1 {
   font-size: 40px;
-}
-
-#root > nav > div > div.navbar-end > a:nth-child(1) {
-  margin: 0;
-}
-
-#root > section > div > div > div > a > div {
-  border: 2px solid red;
 }

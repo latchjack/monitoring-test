@@ -29,14 +29,16 @@ class FilmShow extends React.Component {
       <section className="section">
         <div className="container">
           <div className="columns">
-            <div className="column is-half-desktop">
-              <h1>{name}</h1>
-              <h3>{provider}</h3>
+            <div className="column">
+              <h1 className="title is-1 has-text-black">{name}</h1>
+              <h3 className="title is-4 has-text-black">{provider}</h3>
               <img src={videoImage} alt={name} />
-              <p>SkyGo views: {skygoTotalViews}</p>
-              <p>NowTV views: {nowtvTotalViews}</p>
-              <p>Total views: {parseInt(skygoTotalViews) + parseInt(nowtvTotalViews)}</p>
-              <p>Duration: {duration}</p>
+              <hr />
+              <p><span className="title is-6">SkyGo views</span>: {skygoTotalViews}</p>
+              <p><span className="title is-6">NowTV views</span>: {nowtvTotalViews}</p>
+              <p><span className="title is-6">Total views</span>: {parseInt(skygoTotalViews) + parseInt(nowtvTotalViews)}</p>
+              <p><span className="title is-6">Duration</span>: {duration}</p>
+              <hr />
               <p>{description}</p>
             </div>
           </div>

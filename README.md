@@ -21,43 +21,46 @@ If you would like to start this project please fork and in the Terminal, CD into
 
 ### Challenges
 The main challenges I had on this project were...
-1. ~~Getting the individual films to display. I managed to get the index page up and running fairly quickly, but found it quite tricky to route to another *page* which would display just a single film.~~
+1. ~~Getting the individual films to display. I managed to get the index page up and running fairly quickly, but found it quite tricky to route to another *page* which would display just a single film.~~ ✅
   * Solution - goes here.. include screenshot I took
   ![Error I recieved]( "example code")
-2. Getting the charts to show the data using Recharts.
-  * I found it tricky as ...
+2. Getting the charts to show the data using Recharts. ✅
+  * I've never used Rechart before so it was a little challenge learning how to use it. I found it tricky as I was attempting to map through the array producing 10 charts for each index of the array, until I realised that each index in the array was actually meant to be a marker on a linechart. In the end I got it to work using the code below and going back over the documentation a couple of times.
   ```js
-    render() {
+  render() {
+    const { dataList, timestamp, value } = this.state.dataList
     return (
       <section className="section">
         <div className="container">
-          {this.state.dataList.map(individualData =>
-            <div key={individualData.timestamp} {...individualData} className="columns is-mobile is-multiline">
-              <LineChart width={600} height={300} data={this.state.dataList}>
-                <Line type="monotone" dataKey="individualData.timestamp" stroke="#8884d8" />
-                <Line type="monotone" dataKey="individualData.value" stroke="#82ca9d" />
+            <h1>Timeseries Linechart</h1>
+            <div key={this.state.dataList.timestamp} {...dataList} className="columns is-mobile is-multiline chartDiv">
+              <LineChart width={1200} height={600} data={this.state.dataList} margin={{ top: 30, right: 30, left: 40, bottom: 30 }}>
+                <Line type="monotone" dataKey="timestamp" stroke="#8884d8" />
+                <Line type="monotone" dataKey="value" stroke="#82ca9d" />
                 <CartesianGrid stroke="#ccc" />
-                <XAxis dataKey="value" />
-                <YAxis dataKey="timestamp" />
+                <YAxis dataKey="value" />
+                <XAxis dataKey="timestamp" />
+                <Tooltip />
+                <Legend />
               </LineChart>
             </div>
-          )}
         </div>
       </section>
     )
   }
   ```
-3. 
+3. Converting the Unix Timestamps into the regular date format e.g. `1458003600` is converted into `03/15/2016 @ 1:00am (UTC)`. I attempted to convert is using Moment.js on the X Axis legend but I couldn't get it to work without breaking the page.
 
-}
 
 ### Improvements
 The improvements I would like to make on this game would be the following...
-1. Getting the individual pages working.
-2. Converting the unix timestamps into a date format using [Moment.js](https://momentjs.com/).
-3. Rank the titles using the amount of total viewings they've had.
+1. ~~Getting the individual pages working.~~ Done ✅
+2. ~~Use Rechart on the timeseries data to create a linechart.~~ ✅
+3. Converting the unix timestamps into the common date format using [Moment.js](https://momentjs.com/).
+4. Rank the titles using the amount of total viewings they've had.
 
-Overall I found this really fun but found I needed a some more time to add more functionality. I would definitely like to have another attempt of this without the 4 hour limit.
+## Wins
+I really enjoyed this challenge and found I learnt a lot by doing it. I'm also happy I taught myself how to use Rechart to create the linechart as it's something I've never done before but can see myself using on other projects in the future.
 
 #### Author
 Latch Jack - You can contact me via [Twitter](https://twitter.com/LatchCodes "My twitter profile") or via [email](mailto:latch.jack@gmail.com "my email").

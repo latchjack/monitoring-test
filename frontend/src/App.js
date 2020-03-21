@@ -1,9 +1,7 @@
 import React from 'react'
 import './App.css'
-import 'bulma'
 import 'bulma/css/bulma.css'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-// import './stylesheets/main.scss'
 
 import Home from './components/common/Home'
 import FilmIndex from './components/shows/FilmIndex'
