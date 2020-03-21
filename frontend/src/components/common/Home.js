@@ -6,7 +6,7 @@ const Home = () => (
     <div className="hero-body">
       <div className="container">
         <div className="main-header">
-          <p className="title is-1 has-text-centered">Believe in Better</p>
+          <p className="title is-1 has-text-centered has-text-white">Believe in Better</p>
         </div>
       </div>
     </div>

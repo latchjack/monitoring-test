@@ -21,7 +21,7 @@ class FilmIndex extends React.Component {
     return (
       <>
       <section className="section">
-        <h1 className="title is-1 has-text-black">Films</h1>
+        <h1 className="title is-1 has-text-black has-text-centered">Films</h1>
         <div className="container">
           <div className="columns is-mobile is-multiline">
             {this.state.films.map(film => <FilmCard key={film.name} {...film} />)}
