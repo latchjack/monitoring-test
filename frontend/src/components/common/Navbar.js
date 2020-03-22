@@ -15,8 +15,8 @@ class Navbar extends React.Component {
             </Link>
           </div>
             <div className="navbar-end">
-              <Link className="navbar-item my-nav-items has-text-black title is-4" to="/films">Films</Link>
-              <Link className="navbar-item my-nav-items has-text-black title is-4" to="/times">Times</Link>
+              <Link className="navbar-item my-nav-items title is-4" to="/films">Films</Link>
+              <Link className="navbar-item my-nav-items title is-4" to="/times">Times</Link>
             </div>
           </div>
       </nav>

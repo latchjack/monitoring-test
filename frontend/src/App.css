@@ -3,11 +3,18 @@
 }
 
 .card {
-  background-color: grey;
+  background: linear-gradient(155deg, rgba(255,0,124,1) 30%, rgba(127,0,255,1) 70%);
   background-size: contain;
   height: 100%;
   display: flex;
   flex-direction: column;
+  padding: 20px;
+  /* border: 5px solid black; */
+  border-radius: 10px;
+}
+
+.card-header-title {
+  justify-content: center;
 }
 
 body {
@@ -31,31 +38,54 @@ body {
   background: linear-gradient(155deg, rgba(255,179,0,1) 15%, rgba(255,34,5,1) 50%, rgba(151,12,137,1) 85%);
 }
 
-.card {
-  background: linear-gradient(155deg, rgba(255,0,124,1) 30%, rgba(127,0,255,1) 70%);
-  background-size: contain;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  /* border: 5px solid black; */
-  border-radius: 10px;
-}
-
-#root > section > div > div > div > a > div > div > h1 {
-  text-align: center;
-}
-
 #root > section > div > div > div > a > div > h1 {
   font-size: 40px;
 }
 
 #root > nav > div > div.navbar-end > a {
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: black;
+}
+
+#root > nav > div > div.navbar-end > a:hover, #root > nav > div > div.navbar-brand > a:hover {
+  background: black;
+  color: white;
 }
 
 #root > section > div > div > div > a > div > figure > img {
   /* border: 5px solid black; */
   border-radius: 10px;
+}
+
+.filmInfo {
+  margin-top: 110px;
+}
+
+.filmDesc {
+  font-size: 25px;
+}
+
+.viewStats {
+  font-size: 20px;
+  padding-left: 25px;
+}
+
+.trailerDiv {
+  margin-top: 20px;
+}
+
+.trailerLink {
+  font-size: 20px;
+  padding-left: 25px;
+}
+
+.trailerLink:hover {
+  background: linear-gradient(155deg, rgba(255,0,124,1) 30%, rgba(127,0,255,1) 70%);
+  color: white;
+}
+
+.filmHeadings {
+  background: linear-gradient(155deg, rgba(255,0,124,1) 30%, rgba(127,0,255,1) 70%);
+  border-radius: 3px;
 }

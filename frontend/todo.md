@@ -4,7 +4,8 @@
 3. ~~combine total views to one number~~
 2. ~~get timestamps to show up~~
 3. ~~convert timestamps into charts~~
-4. styling
+4. ~~convert duration into minutes~~
+4. ~~styling~~
 5. rank titles based on view
 6. comment code
 7. submit!
