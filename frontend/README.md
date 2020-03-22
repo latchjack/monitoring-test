@@ -34,8 +34,6 @@ If you would like to start this project please fork and in the Terminal, CD into
 ### Challenges
 The main challenges I had on this project were...
 1. ~~Getting the individual films to display. I managed to get the index page up and running fairly quickly, but found it quite tricky to route to another *page* which would display just a single film.~~ ✅
-  * Solution - goes here.. include screenshot I took
-  ![Error I recieved]( "example code")
 2. Getting the charts to show the data using Recharts. ✅
   * I've never used Rechart before so it was a little challenge learning how to use it. I found it tricky as I was attempting to map through the array producing 10 charts for each index of the array, until I realised that each index in the array was actually meant to be a marker on a linechart. In the end I got it to work using the code below and going back over the documentation a couple of times.
   ```js
