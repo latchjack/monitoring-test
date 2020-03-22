@@ -11,8 +11,8 @@
 + Git & GitHub
 
 ## Release History
-
-+ 1.0 - This was built within the 4 hour limit, any improvements I've planned to implement will be done in a new repository.
++ 2.0 - Improved code on all components. Fixed all the errors. Fixed Show page for the individual films. Added linechart using timeseries data on the Time page. Added styling to match company colours and website styling. 
++ 1.0 - ~~This was built within the 4 hour limit, any improvements I've planned to implement will be done in a new repository.~~
 
 ## Getting Started
 If you would like to start this project please fork and in the Terminal, CD into the `frontend` directory. Once there, `yarn` to install dependencies. Then `yarn start` to get the project running. You can then navigate to `http://localhost:3000` to view the project.
@@ -25,9 +25,9 @@ If you would like to start this project please fork and in the Terminal, CD into
 4. ~~convert timestamps into charts~~
 5. ~~convert duration into minutes~~
 6. ~~styling~~
-7. rank titles based on view
-8. comment code
-9. submit!
+7. ~~comment code~~
+8. rank titles based on view
+
 
 ## Challenges and Improvements
 
@@ -74,6 +74,21 @@ and
 ```
 
 However neither seemed to yield the right result.
+4. Sorting the films in ranking order of views.
+  + I wanted to attempt using the sorting algorithm I had learned about in class and thought I would try the code below. I think I was heading in the right direction but wasn't sure how to implement it into React.
+```js
+  const sortedFilms = this.state.data.map(film => ({ ...film }))
+  sortedFilms.sort((film1, film2) => {
+    const totalViews = this.state.data.skygoTotalViews + this.state.data.nowtvTotalViews
+    
+    const film1Views = film1.totalViews
+    const film2Views = film2.totalViews
+
+    if (film1Views === film2Views ) return 0
+    if (film1Views < film2Views) return -1
+    if (film1Views > film2Views) return 1
+  })
+```
 
 ### Improvements
 The improvements I would like to make on this game would be the following...
@@ -83,7 +98,7 @@ The improvements I would like to make on this game would be the following...
 4. Rank the titles using the amount of total viewings they've had.
 
 ## Wins
-I really enjoyed this challenge and found I learnt a lot by doing it. I'm also happy I taught myself how to use Rechart to create the linechart as it's something I've never done before but can see myself using on other projects in the future.
+I really enjoyed this challenge and found I learnt a lot by doing it. I'm glad I put some more time into it as I think the styling was implemented well and as close to the company's website as possible. I think I did well with the show page data in the end too. I'm also very happy as I taught myself how to use Rechart to create the linechart. This is something I've never done before but can see myself using on other projects in the future.
 
 #### Author
 Latch Jack - You can contact me via [Twitter](https://twitter.com/LatchCodes "My twitter profile") or via [email](mailto:latch.jack@gmail.com "my email").

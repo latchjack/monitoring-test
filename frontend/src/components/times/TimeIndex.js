@@ -1,7 +1,6 @@
 import React from 'react'
 import axios from 'axios'
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend } from 'recharts'
-import { moment } from 'moment'
 
 class TimeIndex extends React.Component {
   state = {
@@ -11,7 +10,7 @@ class TimeIndex extends React.Component {
   async componentDidMount() {
     try {
       const res = await axios.get('https://my-json-server.typicode.com/sky-uk/monitoring-tech-test/data')
-      // console.log(res.data)
+      console.log(res.data)
       this.setState({ dataList: res.data })
     } catch (err) {
       console.log(err)
@@ -30,7 +29,7 @@ class TimeIndex extends React.Component {
                 <Line type="monotone" dataKey="value" stroke="#82ca9d" />
                 <CartesianGrid stroke="#ccc" />
                 <YAxis dataKey="value" />
-                <XAxis dataKey={parseFloat("timestamp" * 1000)} id="xAxis"/>
+                <XAxis dataKey={parseInt("timestamp")} id="xAxis"/>
                 <Tooltip />
                 <Legend />
               </LineChart>
