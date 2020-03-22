@@ -89,3 +89,10 @@ body {
   background: linear-gradient(155deg, rgba(255,0,124,1) 30%, rgba(127,0,255,1) 70%);
   border-radius: 3px;
 }
+
+#root > section > div > div > div > svg {
+  padding-top: 60px;
+  margin-top: 0;
+  margin-left: 45px;
+  /* box-shadow: 1px 1px 20px 5px grey; */
+}
